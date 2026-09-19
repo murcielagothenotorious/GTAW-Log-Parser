@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>GTA World için chat log yardımcısı.
+
+Yüklü Sürüm: {0} {1}
+Kaynak Dizini: {2}</value>
+  </data>
+  <data name="AdvancedFilter" xml:space="preserve">
+    <value>Gelişmiş Filtre</value>
+  </data>
+  <data name="AlreadyExistingDirectoriesWarning" xml:space="preserve">
+    <value> çünkü "{0}" dizinleri zaten mevcut.</value>
+  </data>
+  <data name="AutoStartDisableError" xml:space="preserve">
+    <value>Otomatik başlatma işlevi devre dışı bırakılırken bir hata oluştu.</value>
+  </data>
+  <data name="AutoStartEnableError" xml:space="preserve">
+    <value>Otomatik başlatma işlevi etkinleştirilirken bir hata oluştu.</value>
+  </data>
+  <data name="AutoStartWarning" xml:space="preserve">
+    <value>Programı siler veya farklı bir konuma taşırsanız bu özellik çalışmayı durdurur.</value>
+  </data>
+  <data name="BackupError" xml:space="preserve">
+    <value>Chat logu otomatik olarak kaydedilirken bir hata oluştu.
+
+Yedekleme yolu olarak sistem dışı bir dizin seçtiğinizden emin olun.</value>
+  </data>
+  <data name="BackupMoveError" xml:space="preserve">
+    <value>Yedek dosyaları yeni dizine taşınırken bir hata oluştu.</value>
+  </data>
+  <data name="BackupStatus" xml:space="preserve">
+    <value>Otomatik Yedekleme: {0}</value>
+  </data>
+  <data name="BackupTurnedOff" xml:space="preserve">
+    <value>Otomatik yedekleme KAPATILDI, kullanmak istiyorsanız lütfen tekrar ayarlayın.</value>
+  </data>
+  <data name="BackupWillBeOff" xml:space="preserve">
+    <value>Ayarlar penceresi açıkken otomatik yedekleme işlevi kapatılacak ve yeni ayarlar yalnızca pencere kapatıldığında uygulanacaktır.
+
+Devam etmek istiyor musunuz?</value>
+  </data>
+  <data name="BadBackupPath" xml:space="preserve">
+    <value>Lütfen yedekleme konumu için bir kök dizin olmayan bir klasör seçin.</value>
+  </data>
+  <data name="BadBackupPathSave" xml:space="preserve">
+    <value>Lütfen geçerli bir yedekleme konumu seçin veya otomatik yedeklemeyi kapatın.</value>
+  </data>
+  <data name="BadDirectoryPath" xml:space="preserve">
+    <value>FiveM, yerel GTAW chatini yakalamak için bir oyun dizinine ihtiyaç duymaz.</value>
+  </data>
+  <data name="Beta" xml:space="preserve">
+    <value>Beta</value>
+  </data>
+  <data name="BetaShort" xml:space="preserve">
+    <value>b</value>
+  </data>
+  <data name="CharacterCounter" xml:space="preserve">
+    <value>{0} karakter ve {1} satır</value>
+  </data>
+  <data name="CurrentTime" xml:space="preserve">
+    <value>Şu anki saat: {0}</value>
+  </data>
+  <data name="DirectoryFinder" xml:space="preserve">
+    <value>Yerel FiveM GTAW chati otomatik olarak yakalanır.</value>
+  </data>
+  <data name="DirectoryFinderError" xml:space="preserve">
+    <value>Yerel FiveM GTAW chati kontrol edilirken bir hata oluştu.</value>
+  </data>
+  <data name="DirectoryFinderNotFound" xml:space="preserve">
+    <value>Yerel FiveM GTAW chati tespit edilemedi. Önce FiveM'i açın ve sunucuya katılın.</value>
+  </data>
+  <data name="DirectoryFinderTitle" xml:space="preserve">
+    <value>Bilgi (İlk Başlatma)</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>KAPALI</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>AÇIK</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="FacebrowserLink" xml:space="preserve">
+    <value>https://face.gta.world/</value>
+  </data>
+  <data name="FeatureShowcaseLink" xml:space="preserve">
+    <value>https://forum-tr.gta.world/</value>
+  </data>
+  <data name="FileDeleteError" xml:space="preserve">
+    <value>Dosya silinmeye çalışılırken bir hata oluştu.</value>
+  </data>
+  <data name="FilterHint" xml:space="preserve">
+    <value>Chat logunuzu filtrelemek istiyorsanız her satırda yalnızca bir kelime, sayı veya geçerli bir isim çifti bulunabilir.
+Örnek: Tekne, $500, Ahmet, Ahmet Yilmaz veya Ahmet_Yilmaz</value>
+  </data>
+  <data name="FilterHintNoMatches" xml:space="preserve">
+    <value>Eşleşme bulunamadı.
+
+Her satırda yalnızca bir kelime, sayı veya geçerli bir isim çifti olduğundan emin olun.
+Örnek: Tekne, $500, Ahmet, Ahmet Yilmaz veya Ahmet_Yilmaz</value>
+  </data>
+  <data name="FilterHintSkipped" xml:space="preserve">
+    <value>Geçerli bir biçimde olmadıkları için filtreleme işlemi sırasında bir veya daha fazla kelime atlandı.
+
+Her satırda yalnızca bir kelime, sayı veya geçerli bir isim çifti olduğundan emin olun.
+Örnek: Tekne, $500, Ahmet, Ahmet Yilmaz veya Ahmet_Yilmaz</value>
+  </data>
+  <data name="FilterLogStatus" xml:space="preserve">
+    <value>Chat logu yüklendi{0}{1}</value>
+  </data>
+  <data name="FilterReadError" xml:space="preserve">
+    <value>Seçilen dosya okunurken bir hata oluştu.</value>
+  </data>
+  <data name="ForumsLink" xml:space="preserve">
+    <value>https://forum-tr.gta.world/</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="IntervalHint" xml:space="preserve">
+    <value>Oyun çalışırken chat logunu otomatik olarak yedekle (her {0} {1})</value>
+  </data>
+  <data name="IntervalRecommended" xml:space="preserve">
+    <value>{0}. (önerilen)</value>
+  </data>
+  <data name="InvalidDirectoryPath" xml:space="preserve">
+    <value>Yerel FiveM GTAW chati kullanılamıyor.</value>
+  </data>
+  <data name="InvalidDirectoryPathBackup" xml:space="preserve">
+    <value>Otomatik yedeklemeyi etkinleştirmeden önce FiveM'i açın ve GTAW'a katılın.</value>
+  </data>
+  <data name="InvalidDirectoryPathFilter" xml:space="preserve">
+    <value>Chat logunu filtrelemeden önce FiveM'i açın ve GTAW'a katılın.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="LanguageInfo" xml:space="preserve">
+    <value>Seçilen dil, chat logunun doğru sunucudan alınması için kullanılacaktır.
+
+Bu, Türkçe'yi seçtiğinizde Türkçe sunucusundan oluşturulan chat logunu ayrıştırabileceğiniz anlamına gelir.</value>
+  </data>
+  <data name="LoadedAt" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="MainIP" xml:space="preserve">
+    <value>51.178.79.228_22005</value>
+  </data>
+  <data name="MinimizeInsteadOfClose" xml:space="preserve">
+    <value>Programı kapatmak otomatik yedeklemelerin yapılmasını engelleyecektir.
+
+Bunun yerine programı sistem tepsisine simge durumuna küçültmek ister misiniz?</value>
+  </data>
+  <data name="MinutePlural" xml:space="preserve">
+    <value>dakika</value>
+  </data>
+  <data name="MinuteSingular" xml:space="preserve">
+    <value>dakika</value>
+  </data>
+  <data name="MoveBackups" xml:space="preserve">
+    <value>Mevcut tüm yedek dosyalarınızı yeni dizine taşımak istiyor musunuz?</value>
+  </data>
+  <data name="MultipleChatLogs" xml:space="preserve">
+    <value>Birden fazla GTA World kaynak dizini bulundu. Sunucuya bağlanmak için tek bir IP kullanmanız ve diğer kaynak dizinini silmeniz önerilir.
+
+"{0}" veya "{1}" dizinlerinden birini saklayın.</value>
+  </data>
+  <data name="Negation" xml:space="preserve">
+    <value> yüklenmedi</value>
+  </data>
+  <data name="NoChatLog" xml:space="preserve">
+    <value>GTA World chat logu bulunamıyor.</value>
+  </data>
+  <data name="NoChatLogLoaded" xml:space="preserve">
+    <value>Henüz bir chat logu yüklemediniz.</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Güncelleme bulunamadı.
+İnternet bağlantınızı kontrol etmeyi veya ayarlar penceresinde güncelleme kontrolü zaman aşımını artırmayı deneyin.
+
+Yüklü Sürüm: {0}</value>
+  </data>
+  <data name="NothingFiltered" xml:space="preserve">
+    <value>Henüz hiçbir şey filtrelemediniz.</value>
+  </data>
+  <data name="NothingMovedWarning" xml:space="preserve">
+    <value>Hiçbir dizin yeni konuma taşınmadı</value>
+  </data>
+  <data name="NothingParsed" xml:space="preserve">
+    <value>Henüz hiçbir şey ayrıştırmadınız.</value>
+  </data>
+  <data name="NoWordsToFilter" xml:space="preserve">
+    <value>Filtrelenecek herhangi bir kelime girmediniz.
+
+Kelimelere göre filtreleme yapmak istemiyorsanız basit filtreyi kullanın.</value>
+  </data>
+  <data name="OldChatLog" xml:space="preserve">
+    <value>Chat logu ayrıştırılırken eski bir format algılandı; bu dosyayı ve düzgün güncellenmeyen diğer tüm komut dosyalarını silmeniz önerilir.
+
+Bu dosyaları silmek istiyor musunuz?
+(Silinmeden önce chat log dosyası ayrıştırılacaktır)</value>
+  </data>
+  <data name="OpenDocumentation" xml:space="preserve">
+    <value>GTA World forumlarındaki chat log ayrıştırıcısı dokümantasyon sayfasını açmak ister misiniz?</value>
+  </data>
+  <data name="OtherInstanceRunning" xml:space="preserve">
+    <value>Başka bir örnek zaten çalışıyor, görev çubuğunuzu veya görev yöneticinizi kontrol edin.</value>
+  </data>
+  <data name="ParseError" xml:space="preserve">
+    <value>Chat logu ayrıştırılırken bir hata oluştu.</value>
+  </data>
+  <data name="PartialMoveWarning" xml:space="preserve">
+    <value>Yalnızca "{0}" dizinleri yeni konuma taşındı</value>
+  </data>
+  <data name="ProjectLink" xml:space="preserve">
+    <value>https://github.com/AdvGTAW/GTAW-Log-Parser</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Soru</value>
+  </data>
+  <data name="ReleasesLink" xml:space="preserve">
+    <value>https://github.com/AdvGTAW/GTAW-Log-Parser/releases</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Yeniden Başlat</value>
+  </data>
+  <data name="RunningLatest" xml:space="preserve">
+    <value>Chat log ayrıştırıcısının en son sürümünü kullanıyorsunuz.
+
+Yüklü Sürüm: {0}</value>
+  </data>
+  <data name="SameHashWarning" xml:space="preserve">
+    <value>Aynı chat yakalaması {0} veya daha fazla kez yedeklendi. FiveM'in GTAW bağlantısı kesilmiş veya yerel chat kullanılamıyor olabilir.
+
+FiveM'i açıp sunucuya tekrar katılın ve ardından yeniden deneyin.</value>
+  </data>
+  <data name="SaveError" xml:space="preserve">
+    <value>Dosya kaydedilmeye çalışılırken bir hata oluştu.</value>
+  </data>
+  <data name="SecondaryIP" xml:space="preserve">
+    <value>play.gta.world_22005</value>
+  </data>
+  <data name="SecondPlural" xml:space="preserve">
+    <value>saniye</value>
+  </data>
+  <data name="SecondSingular" xml:space="preserve">
+    <value>saniye</value>
+  </data>
+  <data name="SettingsAfterClose" xml:space="preserve">
+    <value>Ayarlar yalnızca ayarlar penceresini kapattığınızda uygulanacaktır.</value>
+  </data>
+  <data name="SimpleFilter" xml:space="preserve">
+    <value>Basit Filtre</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Başlat</value>
+  </data>
+  <data name="SuccessfulBackup" xml:space="preserve">
+    <value>Chat logu başarıyla ayrıştırıldı ve şuraya yedeklendi: {0}</value>
+  </data>
+  <data name="SwitchServer" xml:space="preserve">
+    <value>Seçilen sunucuya/dile geçmek için programın yeniden başlatılması gerekiyor.
+
+Değişiklikleri uygulayıp uygulamayı şimdi yeniden başlatmak istiyor musunuz?</value>
+  </data>
+  <data name="UCPLink" xml:space="preserve">
+    <value>https://ucp-tr.gta.world/</value>
+  </data>
+  <data name="UpdateAbortTime" xml:space="preserve">
+    <value>{0}.</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>GitHub üzerinde chat log ayrıştırıcısının yeni bir sürümü mevcut.
+
+Yüklü Sürüm: {0}
+Mevcut Sürüm: {1}
+
+Releases sayfasını şimdi ziyaret etmek ister misiniz?</value>
+  </data>
+  <data name="UpdateAvailableTitle" xml:space="preserve">
+    <value>Güncelleme Mevcut</value>
+  </data>
+  <data name="VersionInfo" xml:space="preserve">
+    <value>{0}{1}</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+</root>

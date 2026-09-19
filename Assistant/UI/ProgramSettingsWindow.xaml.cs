@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Input;
 using Assistant.Controllers;
 using Assistant.Localization;
@@ -60,6 +60,7 @@ namespace Assistant.UI
             Properties.Settings.Default.IgnoreBetaVersions = IgnoreBetaVersions.IsChecked == true;
             Properties.Settings.Default.FollowSystemColor = FollowSystemColor.IsChecked == true;
             Properties.Settings.Default.FollowSystemMode = FollowSystemMode.IsChecked == true;
+            Properties.Settings.Default.IncludeColorCodes = IncludeColorCodes.IsChecked == true;
 
             StyleController.DarkMode = ToggleDarkMode.IsChecked == true;
             StyleController.Style = Themes.SelectedItem.ToString();
@@ -83,6 +84,7 @@ namespace Assistant.UI
             DisableWarningPopups.IsChecked = Properties.Settings.Default.DisableWarningPopups;
             DisableErrorPopups.IsChecked = Properties.Settings.Default.DisableErrorPopups;
             IgnoreBetaVersions.IsChecked = Properties.Settings.Default.IgnoreBetaVersions;
+            IncludeColorCodes.IsChecked = Properties.Settings.Default.IncludeColorCodes;
 
             FollowSystemColor.IsChecked = Properties.Settings.Default.FollowSystemColor;
             FollowSystemMode.IsChecked = Properties.Settings.Default.FollowSystemMode;
@@ -126,6 +128,7 @@ namespace Assistant.UI
             Properties.Settings.Default.DisableWarningPopups = false;
             Properties.Settings.Default.DisableErrorPopups = false;
             Properties.Settings.Default.IgnoreBetaVersions = true;
+            Properties.Settings.Default.IncludeColorCodes = true;
             Properties.Settings.Default.FollowSystemColor = AppController.CanFollowSystemColor;
             Properties.Settings.Default.FollowSystemMode = AppController.CanFollowSystemMode;
 

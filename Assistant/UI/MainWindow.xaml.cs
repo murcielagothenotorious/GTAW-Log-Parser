@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Octokit;
 using System.IO;
 using System.Windows;
@@ -313,13 +313,13 @@ namespace Assistant.UI
             if (string.IsNullOrWhiteSpace(Parsed.Text))
                 return;
 
-            if (RemoveTimestamps.IsChecked == true)
+            if (!string.IsNullOrWhiteSpace(AppController.PreviousLog))
             {
-                AppController.PreviousLog = Parsed.Text;
-                Parsed.Text = Regex.Replace(AppController.PreviousLog, @"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", string.Empty);
+                Parsed.Text = AppController.FormatLog(
+                    AppController.PreviousLog,
+                    RemoveTimestamps.IsChecked == true,
+                    Properties.Settings.Default.IncludeColorCodes);
             }
-            else if (!string.IsNullOrWhiteSpace(AppController.PreviousLog))
-                Parsed.Text = AppController.PreviousLog;
         }
 
         /// <summary>
@@ -896,6 +896,14 @@ namespace Assistant.UI
                 {
                     _client = new GitHubClient(new ProductHeaderValue(AppController.ProductHeader));
                     _client.SetRequestTimeout(new TimeSpan(0, 0, 0, Properties.Settings.Default.UpdateCheckTimeout));
+
+                    if (!string.IsNullOrWhiteSpace(AppController.PreviousLog))
+                    {
+                        Parsed.Text = AppController.FormatLog(
+                            AppController.PreviousLog,
+                            RemoveTimestamps.IsChecked == true,
+                            Properties.Settings.Default.IncludeColorCodes);
+                    }
 
                     programSettings = null;
                 };

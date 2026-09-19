@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>GTA World için chat log ayrıştırıcısı.
+
+Yüklü Sürüm: {0} {1}
+Kaynak Dizini: {2}</value>
+  </data>
+  <data name="BadDirectoryPath" xml:space="preserve">
+    <value>FiveM, yerel GTAW chatini ayrıştırmak için bir oyun dizinine ihtiyaç duymaz.</value>
+  </data>
+  <data name="Beta" xml:space="preserve">
+    <value>Beta</value>
+  </data>
+  <data name="BetaShort" xml:space="preserve">
+    <value>b</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="InvalidDirectoryPath" xml:space="preserve">
+    <value>Yerel FiveM GTAW chati kullanılamıyor.</value>
+  </data>
+  <data name="MainIP" xml:space="preserve">
+    <value>51.178.79.228_22005</value>
+  </data>
+  <data name="NoChatLog" xml:space="preserve">
+    <value>GTA World chat logu bulunamıyor.</value>
+  </data>
+  <data name="OtherInstanceRunning" xml:space="preserve">
+    <value>Başka bir örnek zaten çalışıyor, görev çubuğunuzu veya görev yöneticinizi kontrol edin.</value>
+  </data>
+  <data name="ParseError" xml:space="preserve">
+    <value>Chat logu ayrıştırılırken bir hata oluştu.</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Soru</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Yeniden Başlat</value>
+  </data>
+  <data name="SaveError" xml:space="preserve">
+    <value>Dosya kaydedilmeye çalışılırken bir hata oluştu.</value>
+  </data>
+  <data name="SecondaryIP" xml:space="preserve">
+    <value>play.gta.world_22005</value>
+  </data>
+  <data name="SwitchServer" xml:space="preserve">
+    <value>Seçilen sunucuya/dile geçmek için programın yeniden başlatılması gerekiyor.
+
+Değişiklikleri uygulayıp uygulamayı şimdi yeniden başlatmak istiyor musunuz?</value>
+  </data>
+  <data name="VersionInfo" xml:space="preserve">
+    <value>{0}{1}</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+</root>

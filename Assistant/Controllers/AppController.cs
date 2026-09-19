@@ -43,6 +43,21 @@ namespace Assistant.Controllers
             }
         }
 
+        public static string FormatLog(string rawLog, bool removeTimestamps, bool includeColorCodes)
+        {
+            if (string.IsNullOrEmpty(rawLog))
+                return string.Empty;
+
+            string formatted = rawLog;
+            if (removeTimestamps)
+                formatted = System.Text.RegularExpressions.Regex.Replace(formatted, @"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", string.Empty);
+
+            if (!includeColorCodes)
+                formatted = System.Text.RegularExpressions.Regex.Replace(formatted, @"\{#?[a-fA-F0-9]{6}\}", string.Empty);
+
+            return formatted;
+        }
+
         /// <summary>
         /// Returns the GTAW chat previously captured locally from the FiveM HUD.
         /// </summary>
@@ -52,10 +67,9 @@ namespace Assistant.Controllers
             string log = FiveMChatCaptureController.ReadCapturedChat(false);
             PreviousLog = log;
 
-            if (removeTimestamps)
-                log = System.Text.RegularExpressions.Regex.Replace(log, @"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", string.Empty);
+            string formatted = FormatLog(log, removeTimestamps, Properties.Settings.Default.IncludeColorCodes);
 
-            if (string.IsNullOrWhiteSpace(log) && showError)
+            if (string.IsNullOrWhiteSpace(formatted) && showError)
             {
                 MessageBox.Show(
                     "No FiveM GTAW chat has been captured yet. Open GTAW and wait for its HUD to load.",
@@ -64,7 +78,7 @@ namespace Assistant.Controllers
                     MessageBoxImage.Error);
             }
 
-            return log;
+            return formatted;
         }
     }
 }

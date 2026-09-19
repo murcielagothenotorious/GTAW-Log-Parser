@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Windows;
@@ -24,6 +24,19 @@ namespace Assistant.UI
         private bool _skippedWord;
 
         // Assign each filter criterion to a regex pattern
+        private static readonly Regex TimestampRegex = new Regex(@"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", RegexOptions.Compiled);
+        private static readonly Regex ColorCodeRegex = new Regex(@"\{#?[a-fA-F0-9]{6}\}", RegexOptions.Compiled);
+
+        private static string StripTimestampAndColorCodes(string line)
+        {
+            if (string.IsNullOrEmpty(line))
+                return string.Empty;
+
+            string cleaned = TimestampRegex.Replace(line, string.Empty);
+            cleaned = ColorCodeRegex.Replace(cleaned, string.Empty);
+            return cleaned.TrimStart();
+        }
+
         private readonly Dictionary<string, Tuple<string, bool>> _filterCriteria = new Dictionary<string, Tuple<string, bool>>
         {
             // Filter, regex pattern, isEnabled (false = remove from log)
@@ -281,7 +294,7 @@ namespace Assistant.UI
                     bool matchedRegularCriterion = false;
                     
                     // Loop through every criterion and check if the line matches any of them
-                    foreach (KeyValuePair<string, Tuple<string, bool>> keyValuePair in _filterCriteria.Where(keyValuePair => !string.IsNullOrWhiteSpace(keyValuePair.Key) && !string.IsNullOrWhiteSpace(keyValuePair.Value.Item1)).Where(keyValuePair => Regex.IsMatch(Regex.Replace(line, @"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", string.Empty), keyValuePair.Value.Item1, RegexOptions.IgnoreCase)))
+                    foreach (KeyValuePair<string, Tuple<string, bool>> keyValuePair in _filterCriteria.Where(keyValuePair => !string.IsNullOrWhiteSpace(keyValuePair.Key) && !string.IsNullOrWhiteSpace(keyValuePair.Value.Item1)).Where(keyValuePair => Regex.IsMatch(StripTimestampAndColorCodes(line), keyValuePair.Value.Item1, RegexOptions.IgnoreCase)))
                     {
                         matchedRegularCriterion = true;
 
@@ -322,7 +335,7 @@ namespace Assistant.UI
                     // Skip the line if there are no words of
                     // interest in it
                     if (!wordsToCheck.Where(word => !string.IsNullOrWhiteSpace(word)).Any(word =>
-                        Regex.Replace(line, @"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", string.Empty).ToLower()
+                        StripTimestampAndColorCodes(line).ToLower()
                             .Contains(word.ToLower()))) continue;
 
                     // Assume the criterion is disabled
@@ -330,7 +343,7 @@ namespace Assistant.UI
                     bool matchedRegularCriterion = false;
 
                     // Loop through every criterion and check if the line matches any of them
-                    foreach (KeyValuePair<string, Tuple<string, bool>> keyValuePair in _filterCriteria.Where(keyValuePair => !string.IsNullOrWhiteSpace(keyValuePair.Key) && !string.IsNullOrWhiteSpace(keyValuePair.Value.Item1)).Where(keyValuePair => Regex.IsMatch(Regex.Replace(line, @"\[\d{1,2}:\d{1,2}:\d{1,2}\] ", string.Empty), keyValuePair.Value.Item1, RegexOptions.IgnoreCase)))
+                    foreach (KeyValuePair<string, Tuple<string, bool>> keyValuePair in _filterCriteria.Where(keyValuePair => !string.IsNullOrWhiteSpace(keyValuePair.Key) && !string.IsNullOrWhiteSpace(keyValuePair.Value.Item1)).Where(keyValuePair => Regex.IsMatch(StripTimestampAndColorCodes(line), keyValuePair.Value.Item1, RegexOptions.IgnoreCase)))
                     {
                         matchedRegularCriterion = true;
 

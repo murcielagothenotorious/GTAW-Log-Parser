@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Threading;
 using System.Globalization;
 using System.Collections.Generic;
@@ -8,13 +8,14 @@ namespace Parser.Controllers
     public static class LocalizationController
     {
         private static string currentLanguage = string.Empty;
-        public enum Language {English, Spanish}
+        public enum Language { English, Spanish, Turkish }
 
         // Link enum values to language codes
         private static readonly Dictionary<Language, string> Languages = new Dictionary<Language, string>
         {
             { Language.English, "en-US" },
-            { Language.Spanish, "es-ES" }
+            { Language.Spanish, "es-ES" },
+            { Language.Turkish, "tr-TR" }
         };
 
         /// <summary>
